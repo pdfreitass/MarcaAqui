@@ -1,0 +1,6 @@
+@CortaAqui.Api_HostAddress = http://localhost:5183
+
+GET {{CortaAqui.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
