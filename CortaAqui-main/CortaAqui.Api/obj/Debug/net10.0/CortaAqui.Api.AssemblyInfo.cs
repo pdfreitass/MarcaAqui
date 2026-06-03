@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CortaAqui.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6548ece689c8a11597c50e4c0c7f00e832ecd352")]
 [assembly: System.Reflection.AssemblyProductAttribute("CortaAqui.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CortaAqui.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
