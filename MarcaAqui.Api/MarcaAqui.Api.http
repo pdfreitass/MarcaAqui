@@ -1,0 +1,6 @@
+@MarcaAqui.Api_HostAddress = http://localhost:5183
+
+GET {{MarcaAqui.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
