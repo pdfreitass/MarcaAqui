@@ -2,9 +2,33 @@
 
 Roadmap de implementação do sistema MarcaAqui. Cada spec representa uma etapa autónoma e verificável. A numeração segue o padrão do projeto: specs principais de 10 em 10 (`0010`, `0020`, …); correções e hotfixes acrescentam 1 (`0011`, `0012`, …).
 
+A documentação detalhada de cada spec está na pasta [`docs/specs/`](specs/).
+
 ---
 
-## Spec 0010 — Fundação: Banco de Dados e Autenticação
+## 📊 Progresso Geral
+
+```
+⚪⚪⚪⚪⚪⚪⚪ 0%  (0 de 7 specs concluídas)
+```
+
+| Spec | Estado |
+|---|---|
+| [0010 — Fundação](specs/0010-fundacao.md) | 🔴 Por iniciar |
+| [0020 — Gestão da Barbearia](specs/0020-gestao-barbearia.md) | 🔴 Por iniciar |
+| [0030 — Agenda do Profissional](specs/0030-agenda.md) | 🔴 Por iniciar |
+| [0040 — Marcação de Horários](specs/0040-marcacao.md) | 🔴 Por iniciar |
+| [0050 — Frontend React](specs/0050-frontend.md) | 🔴 Por iniciar |
+| [0060 — Integração WhatsApp](specs/0060-whatsapp.md) | 🔴 Por iniciar |
+| [0070 — Melhorias e Polimento](specs/0070-polimento.md) | 🔴 Por iniciar |
+
+> ⚪ = por iniciar &nbsp;&nbsp; 🟡 = em progresso &nbsp;&nbsp; 🟢 = concluída
+
+---
+
+## 📋 Spec 0010 — Fundação: Banco de Dados e Autenticação
+
+📄 Documento completo: [`docs/specs/0010-fundacao.md`](specs/0010-fundacao.md)
 
 **Objetivo:** Base de dados criada, conexão funcional, registo e login com JWT operacionais.
 
@@ -56,6 +80,8 @@ Roadmap de implementação do sistema MarcaAqui. Cada spec representa uma etapa 
 
 ## Spec 0020 — Cadastro e Gestão da Barbearia
 
+📄 Documento completo: [`docs/specs/0020-gestao-barbearia.md`](specs/0020-gestao-barbearia.md)
+
 **Objetivo:** Barbeiro consegue criar a sua barbearia, gerir serviços e adicionar profissionais à equipa.
 
 **Dependência:** Spec 0010
@@ -84,6 +110,8 @@ Roadmap de implementação do sistema MarcaAqui. Cada spec representa uma etapa 
 ---
 
 ## Spec 0030 — Agenda do Profissional
+
+📄 Documento completo: [`docs/specs/0030-agenda.md`](specs/0030-agenda.md)
 
 **Objetivo:** Cada profissional define a sua disponibilidade semanal e o sistema calcula grelha de horários disponíveis.
 
@@ -115,6 +143,8 @@ Roadmap de implementação do sistema MarcaAqui. Cada spec representa uma etapa 
 ---
 
 ## Spec 0040 — Marcação de Horários (Cliente)
+
+📄 Documento completo: [`docs/specs/0040-marcacao.md`](specs/0040-marcacao.md)
 
 **Objetivo:** Cliente autenticado visualiza serviços, escolhe horário disponível e confirma agendamento.
 
@@ -154,6 +184,8 @@ Roadmap de implementação do sistema MarcaAqui. Cada spec representa uma etapa 
 
 ## Spec 0050 — Frontend React (Aplicação Web)
 
+📄 Documento completo: [`docs/specs/0050-frontend.md`](specs/0050-frontend.md)
+
 **Objetivo:** Interface web completa para clientes e barbeiros.
 
 **Dependência:** Spec 0040
@@ -183,6 +215,8 @@ Roadmap de implementação do sistema MarcaAqui. Cada spec representa uma etapa 
 ---
 
 ## Spec 0060 — Integração com WhatsApp
+
+📄 Documento completo: [`docs/specs/0060-whatsapp.md`](specs/0060-whatsapp.md)
 
 **Objetivo:** Notificações automáticas via WhatsApp Business API.
 
@@ -214,6 +248,8 @@ Roadmap de implementação do sistema MarcaAqui. Cada spec representa uma etapa 
 ---
 
 ## Spec 0070 — Melhorias e Polimento
+
+📄 Documento completo: [`docs/specs/0070-polimento.md`](specs/0070-polimento.md)
 
 **Objetivo:** Funcionalidades complementares e qualidade geral.
 
@@ -255,19 +291,3 @@ Roadmap de implementação do sistema MarcaAqui. Cada spec representa uma etapa 
 ```
 
 > **Nota:** As specs 0050 e 0060 são paralelizáveis (dependem ambas da 0040 mas não uma da outra).
-
----
-
-## Estado Atual
-
-| Spec | Estado |
-|---|---|
-| 0010 | 🔴 Por iniciar |
-| 0020 | 🔴 Por iniciar |
-| 0030 | 🔴 Por iniciar |
-| 0040 | 🔴 Por iniciar |
-| 0050 | 🔴 Por iniciar |
-| 0060 | 🔴 Por iniciar |
-| 0070 | 🔴 Por iniciar |
-
-> Este estado será atualizado conforme as specs forem sendo aprovadas e implementadas.
