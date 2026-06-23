@@ -175,6 +175,6 @@ A IA **nunca** deve assumir que pode:
 
 ## Regras de Implementação
 
-- **NÃO implementes código sem um documento de spec aprovado pelo utilizador.**
-- Cada spec tem de ser aprovada pelo Castor antes de qualquer implementação começar.
-- **Na dúvida, NÃO assumes. Pergunta ao Castor.** Qualquer ambiguidade, decisão de design, ou caminho incerto deve ser esclarecido com o utilizador antes de agir.
+- **NÃO implementes código sem um documento de spec aprovado.**
+- Cada spec tem de ser aprovada por **Pedro e Castor** antes de qualquer implementação começar. Se um deles pedir diretamente, pode seguir — a aprovação de um dono do produto é suficiente para iniciar.
+- **Na dúvida, NÃO assumes. Pergunta ao Pedro ou ao Castor.** Qualquer ambiguidade, decisão de design, ou caminho incerto deve ser esclarecido com um dos donos antes de agir.
