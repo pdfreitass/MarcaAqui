@@ -1,7 +1,7 @@
 # Spec 0010 — Fundação: Banco de Dados e Autenticação
 
-**Status:** 🔴 Por iniciar
-**Data de início:** —
+**Status:** 🟡 Em progresso
+**Data de início:** 2026-06-23
 **Data de conclusão:** —
 **Dependências:** Nenhuma (spec inicial)
 

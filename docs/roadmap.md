@@ -9,12 +9,12 @@ A documentação detalhada de cada spec está na pasta [`docs/specs/`](specs/).
 ## 📊 Progresso Geral
 
 ```
-⚪⚪⚪⚪⚪⚪⚪ 0%  (0 de 7 specs concluídas)
+🟡⚪⚪⚪⚪⚪⚪ 0%  (0 de 7 specs concluídas, 1 em progresso)
 ```
 
 | Spec | Estado |
 |---|---|
-| [0010 — Fundação](specs/0010-fundacao.md) | 🔴 Por iniciar |
+| [0010 — Fundação](specs/0010-fundacao.md) | 🟡 Em progresso |
 | [0020 — Gestão da Barbearia](specs/0020-gestao-barbearia.md) | 🔴 Por iniciar |
 | [0030 — Agenda do Profissional](specs/0030-agenda.md) | 🔴 Por iniciar |
 | [0040 — Marcação de Horários](specs/0040-marcacao.md) | 🔴 Por iniciar |

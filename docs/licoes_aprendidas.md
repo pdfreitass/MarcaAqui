@@ -27,12 +27,26 @@ As seções são lidas nesta ordem de prioridade:
 ## Regras Rápidas
 
 1. **Rever `docs/` + `CLAUDE.md` antes de cada ação.** Antes de qualquer alteração, criação de arquivo, ou decisão técnica, reler toda a pasta `docs/` e o `CLAUDE.md`. Esta é a primeira ação em qualquer sessão ou tarefa.
+2. **Atualizar status da spec ao iniciar e concluir.** Assim que uma spec começar a ser implementada, atualizar o `roadmap.md` e o arquivo da spec para 🟡 (em progresso). Ao concluir e verificar, atualizar para 🟢 (concluída) e recalcular a % na barra de progresso.
+3. **Registar dificuldades no `licoes_aprendidas.md`.** Sempre que um erro não-trivial for encontrado e resolvido, registar aqui com o template LL-XXX para que a IA não cometa o mesmo erro em sessões futuras.
 
 ---
 
 ## Lições
 
-> Nenhuma lição registrada ainda. O projeto está na fase inicial (Spec 0010 pendente).
+### LL-001: Microsoft.Data.SqlClient 7.x — `GetInt32("nome")` removido (apenas ordinal)
+
+**Data:** 2026-06-23
+**Contexto:** Implementação da Spec 0010 — repositórios com ADO.NET.
+**Problema:** Ao compilar, os métodos `reader.GetInt32("nome_coluna")`, `reader.GetString("nome_coluna")` e `reader.GetDateTime("nome_coluna")` falharam com erro CS1503: "não é possível converter de 'string' para 'int'".
+**Causa:** No Microsoft.Data.SqlClient 7.x, os métodos tipados (`GetInt32`, `GetString`, `GetDateTime`, `GetDecimal`) só aceitam **ordinal** (int), não nome de coluna (string). As sobrecargas com string foram removidas.
+**Solução:** Em todos os métodos `Mapear()` dos repositórios, obter primeiro o ordinal com `reader.GetOrdinal("nome_coluna")` e depois passar o ordinal para o método tipado:
+```csharp
+var idxId = reader.GetOrdinal("id");
+Id = reader.GetInt32(idxId);
+```
+**Aprendizado:** Sempre usar `GetOrdinal()` + ordinal nos repositórios ADO.NET com Microsoft.Data.SqlClient 7.x+. Nunca passar string diretamente para `GetInt32`/`GetString`/etc.
+**Tags:** sql, ado.net, infrastructure
 
 ---
 
